@@ -14,9 +14,11 @@ const RootLayout = ({children} : Readonly<{children: React.ReactNode}>) => {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="bg-gray-700 text-red-50">
+      <body className="bg-gray-700 text-red-50 font-mono">
         <Header />
-        {children}
+        <div className="clear-both">
+          {children}
+        </div>
       </body>
     </html>
   );
