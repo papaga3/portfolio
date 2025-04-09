@@ -12,7 +12,7 @@ const Header = () => {
     return(
         <div className="float-right block">
             {
-                navElements.map((item) => <Link className="pr-4" href={item.ref}> {item.text} </Link>)
+                navElements.map((item, index) => <Link key={`link-${index}`} className="pr-4" href={item.ref}> {item.text} </Link>)
             }
         </div>
     );

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Button } from "@mui/joy";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Home = () => {
 
@@ -25,14 +27,22 @@ const Home = () => {
 
         <div className="m-4">
             <h3 className="text-xl font-bold"> Here is a list of my skills </h3>
-            { skills.map((item) => 
-                <div className="inline-block m-2 bg-pink-300 border rounded-sm text-center text-neutral-900 w-80 md:w-24"> {item} </div>) 
+            { skills.map((item, index) => 
+                <div key={`skill-${index}`} className="inline-block m-2 bg-pink-300 border rounded-sm text-center text-neutral-900 w-80 md:w-24"> {item} </div>) 
             }
         </div>
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold text-center"> Contact Information </h2>
+        <h2 className="text-3xl font-bold text-center"> Bio Links </h2>
+        <div className="flex">
+          <div>
+              <GitHubIcon />
+          </div>
+          <div>
+              <LinkedInIcon />
+          </div>
+        </div>
       </div>
     </div>
   );
