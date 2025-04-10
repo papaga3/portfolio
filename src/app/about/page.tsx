@@ -1,4 +1,22 @@
 const AboutPage = () => {
+
+    const educationExp = [
+        { 
+            time: "2016 - 2021",
+            degree: "Bachelor of Engineering in Information Technology",
+            school: "VAMK",
+            desc: "During my school year, I"
+        }
+    ];
+
+    const workExp = [
+        {
+            time: "",
+            workplace: "",
+            desc: "",
+        }
+    ];
+
     return(
         <div>
             <div>
@@ -6,11 +24,11 @@ const AboutPage = () => {
             </div>
 
             <div>
-                <h2> Work Experience </h2>
+                <h3 className="text-xl font-bold"> Work Experience </h3>
             </div>
 
             <div>
-                <h2> Education </h2>
+                <h3 className="text-xl font-bold"> Education </h3>
             </div>
         </div>
     );
