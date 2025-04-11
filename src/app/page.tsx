@@ -22,11 +22,12 @@ const Home = () => {
         <div className="m-4 text-justify">
           <p> My name is Quoc Huy, Nguyen. I am a software developer from Vaasa, Finland. I graduated from VAMK in 2021. 
               I have experiences working as a web developer using ReactJS. I am also familiar with JavaSpring and .NET framework.
+              I created this website as a place for me to document some of my personal projects.
           </p>
         </div>
 
         <div className="m-4">
-            <h3 className="text-xl font-bold"> Here is a list of my skills </h3>
+            <h3 className="text-xl font-bold"> My most familiar technology </h3>
             { skills.map((item, index) => 
                 <div key={`skill-${index}`} className="inline-block m-2 bg-pink-300 border rounded-sm text-center text-neutral-900 w-80 md:w-24"> {item} </div>) 
             }
@@ -35,12 +36,12 @@ const Home = () => {
 
       <div>
         <h2 className="text-3xl font-bold text-center"> Bio Links </h2>
-        <div className="flex">
-          <div>
-              <GitHubIcon />
+        <div className="flex justify-center">
+          <div className="m-4 text-xl">
+              <a href="https://github.com/papaga3/"> <GitHubIcon fontSize="large"/> </a>
           </div>
-          <div>
-              <LinkedInIcon />
+          <div className="m-4 text-xl">
+              <a href="https://www.linkedin.com/in/quoc-huy-nguyen-861a42176/"> <LinkedInIcon fontSize="large" /> </a>
           </div>
         </div>
       </div>
