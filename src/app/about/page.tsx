@@ -29,6 +29,18 @@ const AboutPage = () => {
 
             <div>
                 <h3 className="text-xl font-bold"> Education </h3>
+                {
+                    educationExp.map((item, index) => {
+                        return (
+                            <div key={`eduExp-${index}`}>
+                                <div className="font-bold"> {item.time} - {item.degree} - {item.school} </div>
+                                <div className="block">
+                                    {item.desc}
+                                </div>
+                            </div>
+                        );
+                    })
+                }
             </div>
         </div>
     );
